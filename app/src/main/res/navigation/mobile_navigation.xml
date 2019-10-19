@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.b4rt.scannerapp.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_dns"
+        android:name="com.b4rt.scannerapp.ui.dns.DnsFragment"
+        android:label="@string/menu_dns_scan"
+        tools:layout="@layout/fragment_dns" />
+
+    <fragment
+        android:id="@+id/nav_nmap"
+        android:name="com.b4rt.scannerapp.ui.nmap.NmapFragment"
+        android:label="@string/menu_nmap"
+        tools:layout="@layout/fragment_nmap" />
+
+    <fragment
+        android:id="@+id/nav_web_scanner"
+        android:name="com.b4rt.scannerapp.ui.webscanner.WebScannerFragment"
+        android:label="@string/menu_web_scanner"
+        tools:layout="@layout/fragment_website" />
+
+    <fragment
+        android:id="@+id/nav_fuzzing"
+        android:name="com.b4rt.scannerapp.ui.fuzzing.FuzzinfFragment"
+        android:label="@string/menu_fuzzing"
+        tools:layout="@layout/fragment_fuzzing" />
+
+    <fragment
+        android:id="@+id/nav_wordpress"
+        android:name="com.b4rt.scannerapp.ui.wordpress.WordpressFragment"
+        android:label="@string/menu_wordpress"
+        tools:layout="@layout/fragment_wordpress" />
+
+
+    <fragment
+        android:id="@+id/nav_xss"
+        android:name="com.b4rt.scannerapp.ui.xss.XssFragment"
+        android:label="@string/menu_xss"
+        tools:layout="@layout/fragment_xss" />
+
+
+    <fragment
+        android:id="@+id/nav_wardriving"
+        android:name="com.b4rt.scannerapp.ui.wardriving.WardrivingFragment"
+        android:label="@string/menu_wardriving"
+        tools:layout="@layout/fragment_wardriving" />
+
+
+
+  <fragment
+        android:id="@+id/nav_sqli"
+        android:name="com.b4rt.scannerapp.ui.sqli.SqliFragment"
+        android:label="@string/menu_sqli"
+        tools:layout="@layout/fragment_sqli" />
+
+<!--
+<fragment
+        android:id="@+id/nav_share"
+        android:name="scanerappui.sha"
+        android:label="@string/menu_sqli"
+        tools:layout="@layout/fragment_sqli" />
+
+-->
+
+</navigation>

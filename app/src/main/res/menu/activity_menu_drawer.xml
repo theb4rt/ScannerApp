@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_profile" />
+
+    </group>
+    <item android:title="Scanning">
+        <menu>
+            <item
+                android:id="@+id/nav_dns"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_dns_scan" />
+            <item
+                android:id="@+id/nav_nmap"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_nmap" />
+            <item
+                android:id="@+id/nav_web_scanner"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_web_scanner" />
+            <item
+                android:id="@+id/nav_wordpress"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_wordpress" />
+        </menu>
+    </item>
+    <item android:title="Hacking">
+        <menu>
+            <item
+                android:id="@+id/nav_fuzzing"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_fuzzing" />
+            <item
+                android:id="@+id/nav_xss"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_xss" />
+            <item
+                android:id="@+id/nav_sqli"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_sqli" />
+
+
+            <item
+                android:id="@+id/nav_wardriving"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_wardriving" />
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+        </menu>
+    </item>
+
+</menu>

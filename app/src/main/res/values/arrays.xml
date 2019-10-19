@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayNmapTypeScan">ArrayNmapTypeScan
+        <item>Agressive</item>
+        <item>Passive</item>
+        <item>Normal</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="ArrayWebsiteScanner">ArrayWebsiteScanner
+        <item>Agressive</item>
+        <item>Passive</item>
+        <item>WafDetector</item>
+        <item>TheHarvester</item>
+        <item>Nikto</item>
+        <item>Info</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ScannerApp</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="title_activity_menu">menuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Profile</string>
+    <string name="nav_header_subtitle">root.jmn@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_dns_scan">DNS Scan</string>
+    <string name="menu_nmap">Nmap Module</string>
+    <string name="menu_web_scanner">Website Scanner</string>
+    <string name="menu_fuzzing">Fuzzing Directories</string>
+    <string name="menu_xss">XSS Module</string>
+    <string name="menu_sqli">SQli Module</string>
+    <string name="menu_wordpress">Wordpress Scanner</string>
+    <string name="menu_wardriving">Wardriving</string>
+    <string name="menu_share">Share</string>
+
+</resources>
