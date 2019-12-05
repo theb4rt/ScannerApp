@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.b4rt.scannerapp.SplashScreen">
+    tools:context="com.b4rt.scannerapp.Activities.SplashScreenActivity">
 
     <ImageView
         android:id="@+id/imageView2"

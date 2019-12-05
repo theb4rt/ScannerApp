@@ -10,81 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <CheckBox
-            android:id="@+id/chkbox3"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginEnd="50dp"
-            android:text="Enumerate Themes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox2" />
-
-        <CheckBox
-            android:id="@+id/chkbox4"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginEnd="50dp"
-            android:text="Enumerate Plugins"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox3" />
-
-        <CheckBox
-            android:id="@+id/chkbox5"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginEnd="50dp"
-            android:text="VulnPlugins"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox4" />
-
-        <CheckBox
-            android:id="@+id/chkbox6"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginEnd="50dp"
-            android:text="VulnThemes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox5" />
-
-        <CheckBox
-            android:id="@+id/chkbox2"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginEnd="50dp"
-            android:text="Enumerate Users"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox1" />
-
         <Button
             android:id="@+id/btn_wordpress_scan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginBottom="68dp"
             android:text="Launch Attack"
+            app:layout_constraintBottom_toTopOf="@+id/txt_output_web_Scan"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.35"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chkbox6" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txt_tittle_website"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="84dp"
             android:text="Please Insert an Website To Scan:"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTemplateWeb" />
 
@@ -92,10 +35,9 @@
             android:id="@+id/textViewTemplateWeb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="60dp"
             android:text="Select Template :"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,38 +45,62 @@
             android:id="@+id/txt_wp_scan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
             android:hint="Website"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_tittle_website" />
+
+        <RadioGroup
+            android:id="@+id/radio_btn_wordpress"
+            android:layout_width="287dp"
+            android:layout_height="245dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_wordpress_scan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_wp_scan">
+
+            <RadioButton
+                android:id="@+id/radio_enum_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enumerate Users" />
+
+            <RadioButton
+                android:id="@+id/radio_enum_themes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enumerate Themes" />
+
+            <RadioButton
+                android:id="@+id/radio_enum_plugins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enumerate Plugins" />
+
+            <RadioButton
+                android:id="@+id/radio_agressive"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Agressive Scan" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/txt_output_web_Scan"
             android:layout_width="319dp"
             android:layout_height="246dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
+            android:editable="true"
             android:text="Resultados"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_wordpress_scan" />
-
-        <CheckBox
-            android:id="@+id/chkbox1"
-            android:layout_width="270dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="50dp"
-            android:text="AgressiveScan"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_wp_scan" />
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
